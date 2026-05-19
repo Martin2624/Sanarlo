@@ -1,0 +1,118 @@
+.eval-section {
+  background: var(--ink-900);
+  color: var(--bg-cream);
+}
+.eval-section .eyebrow { color: var(--terra-light); }
+.eval-section .eyebrow::before { background: var(--terra-light); }
+.eval-section .section-title { color: var(--bg-cream); }
+.eval-section .section-title em { color: var(--terra-light); }
+.eval-section .section-lead { color: rgba(250, 246, 238, 0.75); }
+
+.eval-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.eval-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 24px;
+  list-style: none;
+  padding: 0;
+  margin: 32px 0 40px;
+}
+.eval-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(216, 157, 122, 0.2);
+  font-size: 15px;
+  color: rgba(250, 246, 238, 0.9);
+}
+.eval-list li code {
+  font-family: var(--font-body);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--terra-light);
+  font-weight: 500;
+  padding-top: 3px;
+  flex-shrink: 0;
+}
+.eval-cta {
+  background: var(--terra-light);
+  color: var(--ink-900);
+  padding: 18px 32px;
+}
+.eval-cta:hover {
+  background: var(--bg-cream);
+  transform: translateY(-1px);
+}
+
+.eval-visual {
+  background: var(--ink-700);
+  border-radius: 16px;
+  padding: 32px;
+  border: 1px solid rgba(216, 157, 122, 0.3);
+}
+.eval-mock {
+  background: var(--bg-cream);
+  color: var(--ink-900);
+  border-radius: 8px;
+  padding: 28px 24px;
+  font-family: var(--font-body);
+}
+.eval-mock-tag {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--terra-deep);
+  margin-bottom: 14px;
+}
+.eval-mock h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: var(--ink-900);
+}
+.eval-q {
+  font-size: 14px;
+  color: var(--ink-700);
+  margin-bottom: 14px;
+  line-height: 1.45;
+}
+.eval-options {
+  display: flex;
+  gap: 8px;
+}
+.eval-opt {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--ink-700);
+}
+.eval-opt.active {
+  background: var(--terra-deep);
+  color: white;
+  border-color: var(--terra-deep);
+}
+.eval-progress {
+  margin-top: 22px;
+  display: flex;
+  gap: 4px;
+}
+.eval-progress span {
+  flex: 1;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--line);
+}
+.eval-progress span.filled { background: var(--terra-deep); }
+
+@media (max-width: 900px) {
+  .eval-grid { grid-template-columns: 1fr; gap: 50px; }
+  .eval-list { grid-template-columns: 1fr; }
+}

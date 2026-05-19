@@ -1,0 +1,185 @@
+/* =============================================
+   Sanarlo — Estilos globales
+   ============================================= */
+
+@import '@fontsource-variable/fraunces';
+@import '@fontsource-variable/fraunces/wght-italic.css';
+@import '@fontsource-variable/karla';
+
+:root {
+  /* Paleta */
+  --bg-cream: #FAF6EE;
+  --bg-paper: #F2E9DA;
+  --bg-deep: #E8DCC4;
+  --ink-900: #2A1F18;
+  --ink-700: #4A3A2E;
+  --ink-500: #7A6A5C;
+  --ink-300: #B5A998;
+  --terra: #B86A4D;
+  --terra-deep: #8E4E36;
+  --terra-light: #D89D7A;
+  --sage: #7E8C6E;
+  --sage-deep: #5A6650;
+  --line: #DCCEB7;
+  --line-soft: #EADFC9;
+
+  /* Tipografía */
+  --font-display: 'Fraunces Variable', Georgia, 'Times New Roman', serif;
+  --font-body: 'Karla Variable', system-ui, -apple-system, sans-serif;
+
+  /* Layout */
+  --container-max: 1180px;
+  --container-pad: 32px;
+}
+
+/* Reset */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-cream);
+  color: var(--ink-900);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.65;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-variation-settings: "SOFT" 80, "opsz" 144;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  margin: 0;
+  color: var(--ink-900);
+}
+
+p {
+  margin: 0 0 1em;
+  color: var(--ink-700);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Container utility */
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-pad);
+}
+
+/* Secciones */
+.block { padding: 120px 0; }
+
+@media (max-width: 800px) {
+  .block { padding: 80px 0; }
+  :root { --container-pad: 22px; }
+}
+
+/* Eyebrow shared style */
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--terra-deep);
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.eyebrow::before {
+  content: "";
+  width: 28px;
+  height: 1px;
+  background: var(--terra);
+}
+
+/* Títulos de sección compartidos */
+.section-title {
+  font-size: clamp(36px, 4.5vw, 56px);
+  max-width: 720px;
+  margin-bottom: 24px;
+}
+.section-title em {
+  font-style: italic;
+  font-variation-settings: "SOFT" 100, "opsz" 144;
+  color: var(--terra-deep);
+}
+
+.section-lead {
+  font-size: 18px;
+  color: var(--ink-700);
+  max-width: 580px;
+  margin-bottom: 60px;
+}
+
+/* Botones */
+.btn {
+  padding: 16px 28px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+  white-space: nowrap;
+}
+.btn-primary {
+  background: var(--ink-900);
+  color: var(--bg-cream);
+}
+.btn-primary:hover {
+  background: var(--terra-deep);
+  transform: translateY(-1px);
+}
+.btn-ghost {
+  background: transparent;
+  color: var(--ink-900);
+  border-color: var(--ink-900);
+}
+.btn-ghost:hover {
+  background: var(--ink-900);
+  color: var(--bg-cream);
+}
+
+/* Animaciones */
+@keyframes rise {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
