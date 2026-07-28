@@ -1,0 +1,14 @@
+.doctoralia-widget-wrap {
+  margin-top: 60px;
+  padding-top: 60px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  justify-content: center;
+  min-height: 480px;
+}
+
+/* El widget de Doctoralia inserta su propio iframe con ancho fijo/responsivo;
+   esto solo asegura que quede centrado y no se corte en pantallas chicas. */
+.doctoralia-widget-wrap iframe {
+  max-width: 100%;
+}
