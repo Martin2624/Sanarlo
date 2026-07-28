@@ -14,18 +14,7 @@ export default function DoctoraliaWidget() {
 
   return (
     <div className="doctoralia-widget-wrap">
-      
-        id="zl-url"
-        className="zl-url"
-        href="https://www.doctoralia.com.mx/perfil/eva-czarina-estrada-nogales"
-        rel="nofollow"
-        data-zlw-doctor="eva-czarina-estrada-nogales"
-        data-zlw-type="big_with_calendar"
-        data-zlw-opinion="false"
-        data-zlw-hide-branding="true"
-        data-zlw-saas-only="true"
-        data-zlw-a11y-title="Widget de reserva de citas médicas"
-      >
+      <a id="zl-url" className="zl-url" href="https://www.doctoralia.com.mx/perfil/eva-czarina-estrada-nogales" rel="nofollow" data-zlw-doctor="eva-czarina-estrada-nogales" data-zlw-type="big_with_calendar" data-zlw-opinion="false" data-zlw-hide-branding="true" data-zlw-saas-only="true" data-zlw-a11y-title="Widget de reserva de citas médicas">
         Reserve una cita
       </a>
     </div>
