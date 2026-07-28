@@ -62,11 +62,31 @@
   background: #1da851;
   transform: none;
 }
+.doctoralia-btn {
+  background: transparent;
+  color: var(--ink-900);
+  border: 1px solid var(--line);
+  width: 100%;
+  justify-content: center;
+  margin-top: 12px;
+}
+.doctoralia-btn:hover {
+  background: var(--ink-900);
+  color: var(--bg-cream);
+  border-color: var(--ink-900);
+  transform: none;
+}
 .form-note {
   font-size: 13px;
   color: var(--ink-500);
   margin-top: 20px;
   line-height: 1.5;
+}
+
+.doctoralia-heading {
+  font-size: clamp(26px, 3vw, 34px);
+  text-align: center;
+  margin: 60px 0 0;
 }
 
 @media (max-width: 800px) {
