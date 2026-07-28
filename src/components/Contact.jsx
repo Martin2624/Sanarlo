@@ -1,4 +1,5 @@
 import { config, professional } from '../config'
+import DoctoraliaWidget from './DoctoraliaWidget'
 import './Contact.css'
 
 export default function Contact() {
@@ -60,7 +61,7 @@ export default function Contact() {
             <p>
               El primer paso es escribir un mensaje breve por WhatsApp. Te respondo personalmente para coordinar horario, modalidad y costo.
             </p>
-            <a
+            
               href={config.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
@@ -71,11 +72,16 @@ export default function Contact() {
               </svg>
               Escribir por WhatsApp
             </a>
+
             <p className="form-note">
-              * Próximamente: agenda integrada con Doctoralia para reservas en línea con disponibilidad en tiempo real.
+              También puedes ver horarios disponibles y reservar tu cita directamente más abajo, con nuestra agenda en línea.
             </p>
           </div>
         </div>
+
+        <div className="eyebrow" style={{ marginTop: 0 }}>Agenda en línea</div>
+        <h3 className="doctoralia-heading">Elige horario y reserva al instante.</h3>
+        <DoctoraliaWidget />
       </div>
     </section>
   )
