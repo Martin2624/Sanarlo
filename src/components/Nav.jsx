@@ -4,7 +4,9 @@ export default function Nav() {
   return (
     <nav className="nav">
       <div className="container nav-inner">
-        <a href="#" className="logo">sanarlo<span className="dot">.</span></a>
+        <a href="#" className="logo">
+          <img src="/images/sanarlo-horizontal.svg" alt="Sanarlo — Psicoterapia" className="logo-img" />
+        </a>
         <div className="nav-links">
           <a href="#sobre">Sobre Eva</a>
           <a href="#servicios">Servicios</a>
