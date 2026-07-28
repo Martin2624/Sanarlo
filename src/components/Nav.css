@@ -14,15 +14,17 @@
   padding: 22px 0;
 }
 .logo {
-  font-family: var(--font-display);
-  font-size: 26px;
-  font-weight: 400;
-  font-variation-settings: "SOFT" 100, "opsz" 144;
-  font-style: italic;
-  color: var(--ink-900);
-  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
 }
-.logo .dot { color: var(--terra); }
+.logo-img {
+  height: 40px;
+  width: auto;
+}
+
+@media (max-width: 800px) {
+  .logo-img { height: 34px; }
+}
 .nav-links {
   display: flex;
   gap: 36px;
