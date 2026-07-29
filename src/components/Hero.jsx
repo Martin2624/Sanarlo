@@ -28,7 +28,6 @@ export default function Hero() {
             role="img"
             aria-label="Retrato profesional de Eva Czarina Estrada"
           >
-            <span className="photo-label" aria-hidden="true">[ retrato · Eva ]</span>
           </div>
           <div className="hero-badge">
             <div className="hero-badge-icon" aria-hidden="true">
