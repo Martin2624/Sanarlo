@@ -8,7 +8,7 @@ export default function About() {
         <div className="about-grid">
           <div
             className="about-photo"
-            style={{ backgroundImage: 'url(/images/consultorio.jpg)' }}
+            style={{ backgroundImage: 'url(/images/consultorio.jpeg)' }}
             role="img"
             aria-label="Espacio terapéutico del consultorio Sanarlo"
           >
