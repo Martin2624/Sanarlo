@@ -1,16 +1,60 @@
-/* Layout Principal */
+/* ==========================================
+   VARIABLES DE MARCA SANARLO
+   ========================================== */
+.contact-section {
+  --color-rust: #b76c47;
+  --color-tan: #ceb799;
+  --color-sage-light: #b8bab1;
+  --color-sage: #8e978b;
+  --color-bg-cream: #fbf6f1;
+  --color-text-dark: #2c2c2c;
+
+  background-color: var(--color-bg-cream);
+  font-family: 'Open Sans', sans-serif;
+  padding: 4rem 1.5rem;
+}
+
+/* Encabezados y textos */
+.eyebrow {
+  color: var(--color-sage);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  color: var(--color-text-dark);
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.section-title em {
+  color: var(--color-rust);
+  font-style: italic;
+}
+
+.section-lead {
+  color: #555555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Grid de 2 columnas */
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 2.5rem;
   margin-top: 2.5rem;
   align-items: start;
 }
 
-/* En pantallas medianas/grandes pasa a 2 columnas */
 @media (min-width: 768px) {
   .contact-grid {
-    grid-template-columns: 1fr 1fr; /* o 1.2fr 1fr si quieres darle un poco más de aire a Doctoralia */
+    grid-template-columns: 1fr 1fr;
     gap: 3rem;
   }
 }
@@ -23,51 +67,95 @@
 }
 
 .doctoralia-heading {
+  color: var(--color-text-dark);
   font-size: 1.25rem;
   font-weight: 600;
-  color: #3e2723;
 }
 
-/* Tarjeta de WhatsApp e Información */
+/* Tarjeta de WhatsApp e Info */
 .wa-card {
   background-color: #ffffff;
   padding: 2rem;
   border-radius: 1.5rem;
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(206, 183, 153, 0.4); /* #ceb799 con opacidad */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
-/* Ítems de contacto de la tarjeta */
+.wa-card h3 {
+  color: var(--color-text-dark);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.wa-card p {
+  color: #555555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Botón de WhatsApp */
+.wa-btn {
+  background-color: #25d366;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.85rem 1.5rem;
+  border-radius: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.wa-btn:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+/* Ítems de Información Adicional */
 .contact-info-item {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
   padding-top: 1rem;
-  border-top: 1px solid #f0ece6;
+  border-top: 1px solid var(--color-tan);
 }
 
 .contact-info-icon {
-  background-color: #f7f3ed;
-  color: #8c6d58;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
+  background-color: var(--color-bg-cream);
+  color: var(--color-rust);
+  padding: 0.6rem;
+  border-radius: 0.75rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  border: 1px solid var(--color-sage-light);
 }
 
 .contact-info-text {
   font-size: 0.9rem;
-  color: #555;
-  line-height: 1.4;
+  color: #4a4a4a;
+  line-height: 1.45;
 }
 
 .contact-info-text strong {
   display: block;
-  color: #222;
+  color: var(--color-rust);
+  font-weight: 600;
   margin-bottom: 0.2rem;
+}
+
+.contact-info-text a {
+  color: var(--color-rust);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-info-text a:hover {
+  text-decoration: underline;
 }
