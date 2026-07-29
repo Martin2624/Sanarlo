@@ -25,7 +25,7 @@ export default function Hero() {
         <div className="hero-visual">
           <div
             className="photo-frame"
-            style={{ backgroundImage: 'url(/images/eva-portrait.jpg)' }}
+            style={{ backgroundImage: 'url(/images/eva-portrait.jpeg)' }}
             role="img"
             aria-label="Retrato profesional de Eva Czarina Estrada"
           >
