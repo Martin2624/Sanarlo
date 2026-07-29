@@ -5,8 +5,7 @@ export default function Nav() {
     <nav className="nav">
       <div className="container nav-inner">
         <a href="#" className="logo">
-          <img src="/images/logo/sanarlo-horizontal.svg" alt="Sanarlo — Psicoterapia" className="logo-img" />
-        </a>
+<img src="/images/sanarlo-horizontal.svg" alt="Sanarlo — Psicoterapia" className="logo-img" />        </a>
         <div className="nav-links">
           <a href="#sobre">Sobre Eva</a>
           <a href="#servicios">Servicios</a>
