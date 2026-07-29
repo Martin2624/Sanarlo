@@ -40,6 +40,8 @@
   color: var(--ink-700);
   max-width: 480px;
   margin-bottom: 40px;
+  text-align: justify;
+  hyphens: auto;
 }
 .hero-actions {
   display: flex;
