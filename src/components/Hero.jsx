@@ -6,7 +6,7 @@ export default function Hero() {
     <header className="hero">
       <div className="container hero-grid">
         <div>
-          <div className="hero-eyebrow">Psicoterapia humanista · {professional.city.split(',')[0]}</div>
+          <div className="hero-eyebrow">Psicoterapia cognitivo conductual · {professional.city.split(',')[0]}</div>
           <h1>Un espacio para <em>encontrarte</em> y volver a habitarte.</h1>
           <p className="hero-lead">
             Acompañamiento terapéutico para adultos desde la psicología humanista. Un encuentro auténtico para pensar, sentir y elegir con más claridad lo que sigue.
