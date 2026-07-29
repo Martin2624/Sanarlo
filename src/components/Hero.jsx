@@ -9,7 +9,7 @@ export default function Hero() {
           <div className="hero-eyebrow">Psicoterapia cognitivo conductual · {professional.city.split(',')[0]}</div>
           <h1>Un espacio para <em>encontrarte</em> y volver a habitarte.</h1>
           <p className="hero-lead">
-            Acompañamiento terapéutico para adultos desde la psicología humanista. Un encuentro auténtico para pensar, sentir y elegir con más claridad lo que sigue.
+            Acompañamiento terapéutico para adultos desde la psicología cognitivo-conductual. Mi prioridad es que cada persona encuentre un espacio donde pueda sentirse escuchada, comprendida y acompañada con respeto.
           </p>
           <div className="hero-actions">
             <a href={config.whatsappUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
@@ -27,6 +27,7 @@ export default function Hero() {
             className="photo-frame"
             style={{ backgroundImage: 'url(/images/eva-portrait.jpeg)' }}
             role="img"
+            aria-label="Retrato profesional de Eva Czarina Estrada"
           >
             <span className="photo-label" aria-hidden="true">[ retrato · Eva ]</span>
           </div>
