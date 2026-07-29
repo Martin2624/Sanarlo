@@ -9,8 +9,7 @@ export default function Hero() {
           <div className="hero-eyebrow">Psicoterapia cognitivo conductual · {professional.city.split(',')[0]}</div>
           <h1>Un espacio para <em>encontrarte</em> y volver a habitarte.</h1>
           <p className="hero-lead">
-            Acompañamiento terapéutico para adultos desde la psicología cognitivo-conductual. Mi prioridad es que cada persona encuentre un espacio donde pueda sentirse escuchada, comprendida y acompañada con respeto.
-          </p>
+           Creo profundamente que la terapia no busca cambiar quién eres, sino ayudarte a comprenderte mejor, aceptar tu historia y construir una vida con mayor bienestar, autenticidad y equilibrio.          </p>
           <div className="hero-actions">
             <a href={config.whatsappUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
               Agendar primera consulta
