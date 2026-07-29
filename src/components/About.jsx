@@ -20,10 +20,9 @@ export default function About() {
               Soy <em>{professional.shortName}</em>, y mi trabajo es acompañarte.
             </h2>
             <p>
-              Mi formación y mi práctica se sostienen en la psicología humanista: el supuesto de que cada persona es la mejor experta en sí misma, y de que el cambio surge del encuentro auténtico, no de fórmulas. Acompaño procesos de ansiedad, duelo, crisis vitales y búsquedas de sentido.
-            </p>
+Soy Licenciada en Psicología y trabajo desde un enfoque cognitivo-conductual basado en evidencia científica. Acompaño a adolescentes y personas adultas en procesos relacionados con ansiedad, depresión, regulación emocional, autoestima, estrés, duelo, autoconocimiento y neurodivergencia, adaptando cada proceso a las necesidades y objetivos de cada persona.
             <p>
-              Cada proceso terapéutico es distinto. No trabajo con manuales ni recetas: trabajo desde la escucha, construyendo contigo un espacio donde puedas pensar en voz alta, sin juicio, con dirección y, sobre todo, con presencia.
+Mi interés por la neurodiversidad, especialmente por el autismo y el TDAH, nace tanto de mi formación profesional como de mi propia experiencia. Como mujer autista con diagnóstico tardío, conozco de primera mano lo que implica crecer sintiendo que algo es diferente sin encontrar respuestas claras, así como el impacto que puede tener recibir un diagnóstico en la vida adulta.
             </p>
             <div className="credentials">
               <div className="credential-item">
