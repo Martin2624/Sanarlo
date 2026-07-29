@@ -12,7 +12,6 @@ export default function About() {
             role="img"
             aria-label="Espacio terapéutico del consultorio Sanarlo"
           >
-            <span aria-hidden="true">[ foto editorial · espacio terapéutico ]</span>
           </div>
           <div className="about-body">
             <div className="eyebrow">Sobre mí</div>
