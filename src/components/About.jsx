@@ -22,7 +22,8 @@ export default function About() {
             <p>
               Soy Licenciada en Psicología y trabajo desde un enfoque cognitivo-conductual basado en evidencia científica. 
               Acompaño a adolescentes y personas adultas en procesos relacionados con ansiedad, depresión, regulación emocional, autoestima, duelo y autoconocimiento, ofreciendo un espacio seguro, respetuoso y libre de juicios donde cada persona pueda avanzar a su propio ritmo.    
-           <p>
+            </p>
+            <p>
              Mi interés por la neurodiversidad nace tanto de mi formación profesional como de mi experiencia personal como mujer autista con diagnóstico tardío. 
              Esto me permite acompañar a personas autistas, con TDAH y otras formas de neurodivergencia desde una comprensión cercana, sin perder el rigor clínico y el compromiso con una atención basada en evidencia.
            </p>
