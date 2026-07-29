@@ -11,7 +11,7 @@ export default function Footer() {
           <div>
             <div className="footer-logo">sanarlo<span className="dot">.</span></div>
             <p className="footer-tagline">
-              Consultorio de psicoterapia humanista. Acompañamiento para adultos desde el encuentro auténtico y el respeto por tu proceso.
+              Consultorio de psicoterapia cognitivo conductual. Acompañamiento para adultos desde el encuentro auténtico y el respeto por tu proceso.
             </p>
           </div>
           <div>
