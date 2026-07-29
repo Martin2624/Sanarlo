@@ -9,9 +9,12 @@ export default function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div>
-            <div className="footer-logo">sanarlo<span className="dot">.</span></div>
+            <div className="footer-logo">
+              <img src="/images/sanarlo-icon.svg" alt="" className="footer-logo-icon" aria-hidden="true" />
+              sanarlo<span className="dot">.</span>
+            </div>
             <p className="footer-tagline">
-              Consultorio de psicoterapia cognitivo conductual. Acompañamiento para adultos desde el encuentro auténtico y el respeto por tu proceso.
+              Consultorio de psicoterapia humanista. Acompañamiento para adultos desde el encuentro auténtico y el respeto por tu proceso.
             </p>
           </div>
           <div>
@@ -20,7 +23,6 @@ export default function Footer() {
               <li><a href="#sobre">Sobre Eva</a></li>
               <li><a href="#servicios">Servicios</a></li>
               <li><a href="#evaluaciones">Evaluaciones</a></li>
-              <li><a href="#blog">Blog</a></li>
             </ul>
           </div>
           <div>
